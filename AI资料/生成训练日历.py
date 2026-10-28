@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""从 02 的按日训练明细生成 SVG 月历，并更新 Markdown 图片引用。"""
+"""从 02 的实际训练生成一张连续的 SVG 月历，并更新 Markdown 图片引用。"""
 
 import argparse
 import calendar
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 from html import escape
 from pathlib import Path
 import re
@@ -18,10 +18,15 @@ WIDTH, MARGIN, CELL_W, CELL_H = 1680, 28, 232, 170
 GRID_Y = 154
 FONT = "-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif"
 COLORS = {
-    "力量": ("#f1dff7", "#713e81"),
-    "有氧": ("#def1e8", "#28654e"),
-    "热身": ("#e9edf3", "#526174"),
+    "力量": ("#dce7f2", "#345775"),
+    "有氧": ("#deebe3", "#3d6555"),
+    "热身": ("#eae7e0", "#686359"),
 }
+BACKGROUND = "#fdfcf9"
+WEEKEND = "#f2f1ec"
+GRID = "#deded7"
+INK = "#303634"
+TODAY = "#b85c47"
 
 
 def read_training(markdown):
@@ -79,20 +84,44 @@ def events(rows):
     return items
 
 
-def render(year, month, days, today):
-    weeks = calendar.Calendar(firstweekday=6).monthdatescalendar(year, month)
+def calendar_range(days):
+    """补齐最早、最晚训练月份，再向两端补齐整周（周日至周六）。"""
+    first, last = min(days), max(days)
+    start = first.replace(day=1)
+    end = last.replace(day=calendar.monthrange(last.year, last.month)[1])
+    grid_start = start - timedelta(days=(start.weekday() + 1) % 7)
+    grid_end = end + timedelta(days=(5 - end.weekday()) % 7)
+    weeks = []
+    cursor = grid_start
+    while cursor <= grid_end:
+        weeks.append([cursor + timedelta(days=offset) for offset in range(7)])
+        cursor += timedelta(days=7)
+    return start, end, weeks
+
+
+def range_label(start, end):
+    if (start.year, start.month) == (end.year, end.month):
+        return f"{start.year}年{start.month}月"
+    if start.year == end.year:
+        return f"{start.year}年{start.month}–{end.month}月"
+    return f"{start.year}年{start.month}月–{end.year}年{end.month}月"
+
+
+def render(days, today):
+    start, end, weeks = calendar_range(days)
+    heading = range_label(start, end)
     # 各周同高；动作增多时统一增加格高，避免内容被裁切。
-    most_events = max(len(events(rows)) for day, rows in days.items() if (day.year, day.month) == (year, month))
+    most_events = max(len(events(rows)) for rows in days.values())
     cell_h = max(CELL_H, 54 + most_events * 27 + 12)
     height = GRID_Y + len(weeks) * cell_h + 28
     parts = [
         '<?xml version="1.0" encoding="UTF-8"?>',
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="{height}" viewBox="0 0 {WIDTH} {height}" role="img" aria-labelledby="title description">',
-        f'<title id="title">{year}年{month}月实际训练月历</title>',
+        f'<title id="title">{heading}实际训练月历</title>',
         '<desc id="description">周日起始。仅显示已记录的训练，空白不代表休息；重量、次数等完整明细见下方按日记录。</desc>',
-        f'<rect width="{WIDTH}" height="{height}" fill="#ffffff"/>',
+        f'<rect width="{WIDTH}" height="{height}" fill="{BACKGROUND}"/>',
         f'<g font-family="{escape(FONT, quote=True)}">',
-        f'<text x="{MARGIN}" y="76" font-size="52" font-weight="700" fill="#262626">{year}年{month}月</text>',
+        f'<text x="{MARGIN}" y="76" font-size="52" font-weight="700" fill="{INK}">{heading}</text>',
     ]
     for i, kind in enumerate(COLORS):
         x = WIDTH - MARGIN - 300 + i * 106
@@ -100,23 +129,25 @@ def render(year, month, days, today):
         parts.append(f'<rect x="{x}" y="49" width="16" height="16" rx="4" fill="{fill}"/>')
         parts.append(f'<text x="{x + 25}" y="64" font-size="20" fill="{color}">{kind}</text>')
     for col, weekday in enumerate(("周日", "周一", "周二", "周三", "周四", "周五", "周六")):
-        color = "#8a8a8e" if col in (0, 6) else "#333333"
+        color = "#8c8b82" if col in (0, 6) else INK
         parts.append(f'<text x="{MARGIN + (col + 0.5) * CELL_W}" y="132" text-anchor="middle" font-size="25" fill="{color}">{weekday}</text>')
 
     for row, week in enumerate(weeks):
         for col, day in enumerate(week):
             x, y = MARGIN + col * CELL_W, GRID_Y + row * cell_h
-            in_month = day.month == month
-            fill = "#f5f5f5" if col in (0, 6) else "#ffffff"
+            in_range = start <= day <= end
+            fill = WEEKEND if col in (0, 6) else BACKGROUND
             parts.append(f'<rect x="{x}" y="{y}" width="{CELL_W}" height="{cell_h}" fill="{fill}"/>')
-            color = "#b8b8bc" if not in_month else ("#858589" if col in (0, 6) else "#303030")
-            label = str(day.day) if in_month else f"{day.month}月{day.day}日"
-            if day == today and in_month:
-                parts.append(f'<circle cx="{x + CELL_W - 29}" cy="{y + 29}" r="22" fill="#ff3b30"/>')
+            color = "#b9b8af" if not in_range else ("#89897e" if col in (0, 6) else INK)
+            label = str(day.day) if in_range else f"{day.month}月{day.day}日"
+            if in_range and day.day == 1:
+                parts.append(f'<text x="{x + 14}" y="{y + 38}" font-size="23" font-weight="600" fill="#345775">{day.month}月</text>')
+            if day == today and in_range:
+                parts.append(f'<circle cx="{x + CELL_W - 29}" cy="{y + 29}" r="22" fill="{TODAY}"/>')
                 parts.append(f'<text x="{x + CELL_W - 29}" y="{y + 39}" text-anchor="middle" font-size="28" fill="#ffffff">{day.day}</text>')
             else:
                 parts.append(f'<text x="{x + CELL_W - 14}" y="{y + 39}" text-anchor="end" font-size="28" fill="{color}">{label}</text>')
-            if not in_month:
+            if not in_range:
                 continue
             for index, (kind, label, detail) in enumerate(events(days.get(day, []))):
                 event_y = y + 54 + index * 27
@@ -131,10 +162,10 @@ def render(year, month, days, today):
     grid_bottom = GRID_Y + len(weeks) * cell_h
     for col in range(8):
         x = MARGIN + col * CELL_W
-        parts.append(f'<path d="M{x},{GRID_Y} V{grid_bottom}" stroke="#d9d9dc" stroke-width="1"/>')
+        parts.append(f'<path d="M{x},{GRID_Y} V{grid_bottom}" stroke="{GRID}" stroke-width="1"/>')
     for row in range(len(weeks) + 1):
         y = GRID_Y + row * cell_h
-        parts.append(f'<path d="M{MARGIN},{y} H{WIDTH - MARGIN}" stroke="#d9d9dc" stroke-width="1"/>')
+        parts.append(f'<path d="M{MARGIN},{y} H{WIDTH - MARGIN}" stroke="{GRID}" stroke-width="1"/>')
     parts.append('</g></svg>')
     return "\n".join(parts) + "\n"
 
@@ -145,18 +176,17 @@ def main():
     args = parser.parse_args()
     markdown = RECORD.read_text(encoding="utf-8")
     days = read_training(markdown)
-    months = sorted({(day.year, day.month) for day in days}, reverse=True)
+    months = {(day.year, day.month) for day in days}
     OUTPUT.mkdir(parents=True, exist_ok=True)
-    embeds = []
-    for year, month in months:
-        name = f"{year}-{month:02d}.svg"
-        (OUTPUT / name).write_text(render(year, month, days, args.today), encoding="utf-8")
-        embeds.append(f"![{year}年{month}月实际训练月历](AI资料/训练日历/{name})")
-    section = "## 训练日\n\n仅显示已记录的训练；空白不代表休息。完整动作与组次见下方按日记录。\n\n" + "\n\n".join(embeds) + "\n\n"
+    name = "训练月历.svg"
+    (OUTPUT / name).write_text(render(days, args.today), encoding="utf-8")
+    start, end, _ = calendar_range(days)
+    embed = f"![{range_label(start, end)}实际训练月历](AI资料/训练日历/{name})"
+    section = "## 训练日\n\n仅显示已记录的训练；空白不代表休息。完整动作与组次见下方按日记录。\n\n" + embed + "\n\n"
     before, rest = markdown.split("## 训练日\n", 1)
     _, after = rest.split("## 按日记录\n", 1)
     RECORD.write_text(before + section + "## 按日记录\n" + after, encoding="utf-8")
-    print(f"已生成 {len(months)} 个月的月历，包含 {len(days)} 个实际训练日。")
+    print(f"已将 {len(months)} 个月合为一张连续月历，包含 {len(days)} 个实际训练日。")
 
 
 if __name__ == "__main__":
