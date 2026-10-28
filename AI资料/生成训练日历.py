@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""从 02 的实际训练生成一张连续的 SVG 月历，并更新 Markdown 图片引用。"""
+"""从 README 的实际训练生成一张连续的 SVG 月历，并更新 Markdown 图片引用。"""
 
 import argparse
 import calendar
@@ -12,7 +12,7 @@ from zoneinfo import ZoneInfo
 
 
 ROOT = Path(__file__).resolve().parent.parent
-RECORD = ROOT / "02_计划与长期记录.md"
+RECORD = ROOT / "README.md"
 OUTPUT = ROOT / "AI资料" / "训练日历"
 WIDTH, MARGIN, CELL_W, CELL_H = 1680, 28, 232, 170
 GRID_Y = 154
