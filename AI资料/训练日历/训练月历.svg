@@ -220,8 +220,7 @@
 <rect x="492" y="1546" width="232" height="174" fill="#fdfcf9"/>
 <text x="710" y="1585" text-anchor="end" font-size="28" fill="#303634">27</text>
 <rect x="724" y="1546" width="232" height="174" fill="#fdfcf9"/>
-<circle cx="927" cy="1575" r="22" fill="#b85c47"/>
-<text x="927" y="1585" text-anchor="middle" font-size="28" fill="#ffffff">28</text>
+<text x="942" y="1585" text-anchor="end" font-size="28" fill="#303634">28</text>
 <g><title>2026-10-28 硬拉：40×10；60×10；80×10×3</title>
 <rect x="729" y="1600" width="222" height="24" rx="8" fill="#dce7f2"/>
 <text x="738" y="1618" font-size="20.00" fill="#345775">硬拉</text></g>
@@ -229,7 +228,8 @@
 <rect x="729" y="1627" width="222" height="24" rx="8" fill="#deebe3"/>
 <text x="738" y="1645" font-size="20.00" fill="#3d6555">爬楼机 30 分钟</text></g>
 <rect x="956" y="1546" width="232" height="174" fill="#fdfcf9"/>
-<text x="1174" y="1585" text-anchor="end" font-size="28" fill="#303634">29</text>
+<circle cx="1159" cy="1575" r="22" fill="#b85c47"/>
+<text x="1159" y="1585" text-anchor="middle" font-size="28" fill="#ffffff">29</text>
 <rect x="1188" y="1546" width="232" height="174" fill="#fdfcf9"/>
 <text x="1406" y="1585" text-anchor="end" font-size="28" fill="#303634">30</text>
 <rect x="1420" y="1546" width="232" height="174" fill="#f2f1ec"/>
