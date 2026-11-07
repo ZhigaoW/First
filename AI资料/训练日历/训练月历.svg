@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="1748" viewBox="0 0 1680 1748" role="img" aria-labelledby="title description">
-<title id="title">2026年9–10月实际训练月历</title>
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="2618" viewBox="0 0 1680 2618" role="img" aria-labelledby="title description">
+<title id="title">2026年9–11月实际训练月历</title>
 <desc id="description">周日起始。仅显示已记录的训练，空白不代表休息；重量、次数等完整明细见下方按日记录。</desc>
-<rect width="1680" height="1748" fill="#fdfcf9"/>
+<rect width="1680" height="2618" fill="#fdfcf9"/>
 <g font-family="-apple-system, BlinkMacSystemFont, &#x27;PingFang SC&#x27;, &#x27;Microsoft YaHei&#x27;, &#x27;Noto Sans CJK SC&#x27;, sans-serif">
-<text x="28" y="76" font-size="52" font-weight="700" fill="#303634">2026年9–10月</text>
+<text x="28" y="76" font-size="52" font-weight="700" fill="#303634">2026年9–11月</text>
 <rect x="1352" y="49" width="16" height="16" rx="4" fill="#dce7f2"/>
 <text x="1377" y="64" font-size="20" fill="#345775">力量</text>
 <rect x="1458" y="49" width="16" height="16" rx="4" fill="#deebe3"/>
@@ -228,20 +228,94 @@
 <rect x="729" y="1627" width="222" height="24" rx="8" fill="#deebe3"/>
 <text x="738" y="1645" font-size="20.00" fill="#3d6555">爬楼机 30 分钟</text></g>
 <rect x="956" y="1546" width="232" height="174" fill="#fdfcf9"/>
-<circle cx="1159" cy="1575" r="22" fill="#b85c47"/>
-<text x="1159" y="1585" text-anchor="middle" font-size="28" fill="#ffffff">29</text>
+<text x="1174" y="1585" text-anchor="end" font-size="28" fill="#303634">29</text>
 <rect x="1188" y="1546" width="232" height="174" fill="#fdfcf9"/>
 <text x="1406" y="1585" text-anchor="end" font-size="28" fill="#303634">30</text>
 <rect x="1420" y="1546" width="232" height="174" fill="#f2f1ec"/>
 <text x="1638" y="1585" text-anchor="end" font-size="28" fill="#89897e">31</text>
-<path d="M28,154 V1720" stroke="#deded7" stroke-width="1"/>
-<path d="M260,154 V1720" stroke="#deded7" stroke-width="1"/>
-<path d="M492,154 V1720" stroke="#deded7" stroke-width="1"/>
-<path d="M724,154 V1720" stroke="#deded7" stroke-width="1"/>
-<path d="M956,154 V1720" stroke="#deded7" stroke-width="1"/>
-<path d="M1188,154 V1720" stroke="#deded7" stroke-width="1"/>
-<path d="M1420,154 V1720" stroke="#deded7" stroke-width="1"/>
-<path d="M1652,154 V1720" stroke="#deded7" stroke-width="1"/>
+<rect x="28" y="1720" width="232" height="174" fill="#f2f1ec"/>
+<text x="42" y="1758" font-size="23" font-weight="600" fill="#345775">11月</text>
+<text x="246" y="1759" text-anchor="end" font-size="28" fill="#89897e">1</text>
+<rect x="260" y="1720" width="232" height="174" fill="#fdfcf9"/>
+<text x="478" y="1759" text-anchor="end" font-size="28" fill="#303634">2</text>
+<rect x="492" y="1720" width="232" height="174" fill="#fdfcf9"/>
+<text x="710" y="1759" text-anchor="end" font-size="28" fill="#303634">3</text>
+<rect x="724" y="1720" width="232" height="174" fill="#fdfcf9"/>
+<text x="942" y="1759" text-anchor="end" font-size="28" fill="#303634">4</text>
+<rect x="956" y="1720" width="232" height="174" fill="#fdfcf9"/>
+<text x="1174" y="1759" text-anchor="end" font-size="28" fill="#303634">5</text>
+<rect x="1188" y="1720" width="232" height="174" fill="#fdfcf9"/>
+<text x="1406" y="1759" text-anchor="end" font-size="28" fill="#303634">6</text>
+<g><title>2026-11-06 深蹲：60×10；90×10×2</title>
+<rect x="1193" y="1774" width="222" height="24" rx="8" fill="#dce7f2"/>
+<text x="1202" y="1792" font-size="20.00" fill="#345775">深蹲</text></g>
+<rect x="1420" y="1720" width="232" height="174" fill="#f2f1ec"/>
+<circle cx="1623" cy="1749" r="22" fill="#b85c47"/>
+<text x="1623" y="1759" text-anchor="middle" font-size="28" fill="#ffffff">7</text>
+<rect x="28" y="1894" width="232" height="174" fill="#f2f1ec"/>
+<text x="246" y="1933" text-anchor="end" font-size="28" fill="#89897e">8</text>
+<rect x="260" y="1894" width="232" height="174" fill="#fdfcf9"/>
+<text x="478" y="1933" text-anchor="end" font-size="28" fill="#303634">9</text>
+<rect x="492" y="1894" width="232" height="174" fill="#fdfcf9"/>
+<text x="710" y="1933" text-anchor="end" font-size="28" fill="#303634">10</text>
+<rect x="724" y="1894" width="232" height="174" fill="#fdfcf9"/>
+<text x="942" y="1933" text-anchor="end" font-size="28" fill="#303634">11</text>
+<rect x="956" y="1894" width="232" height="174" fill="#fdfcf9"/>
+<text x="1174" y="1933" text-anchor="end" font-size="28" fill="#303634">12</text>
+<rect x="1188" y="1894" width="232" height="174" fill="#fdfcf9"/>
+<text x="1406" y="1933" text-anchor="end" font-size="28" fill="#303634">13</text>
+<rect x="1420" y="1894" width="232" height="174" fill="#f2f1ec"/>
+<text x="1638" y="1933" text-anchor="end" font-size="28" fill="#89897e">14</text>
+<rect x="28" y="2068" width="232" height="174" fill="#f2f1ec"/>
+<text x="246" y="2107" text-anchor="end" font-size="28" fill="#89897e">15</text>
+<rect x="260" y="2068" width="232" height="174" fill="#fdfcf9"/>
+<text x="478" y="2107" text-anchor="end" font-size="28" fill="#303634">16</text>
+<rect x="492" y="2068" width="232" height="174" fill="#fdfcf9"/>
+<text x="710" y="2107" text-anchor="end" font-size="28" fill="#303634">17</text>
+<rect x="724" y="2068" width="232" height="174" fill="#fdfcf9"/>
+<text x="942" y="2107" text-anchor="end" font-size="28" fill="#303634">18</text>
+<rect x="956" y="2068" width="232" height="174" fill="#fdfcf9"/>
+<text x="1174" y="2107" text-anchor="end" font-size="28" fill="#303634">19</text>
+<rect x="1188" y="2068" width="232" height="174" fill="#fdfcf9"/>
+<text x="1406" y="2107" text-anchor="end" font-size="28" fill="#303634">20</text>
+<rect x="1420" y="2068" width="232" height="174" fill="#f2f1ec"/>
+<text x="1638" y="2107" text-anchor="end" font-size="28" fill="#89897e">21</text>
+<rect x="28" y="2242" width="232" height="174" fill="#f2f1ec"/>
+<text x="246" y="2281" text-anchor="end" font-size="28" fill="#89897e">22</text>
+<rect x="260" y="2242" width="232" height="174" fill="#fdfcf9"/>
+<text x="478" y="2281" text-anchor="end" font-size="28" fill="#303634">23</text>
+<rect x="492" y="2242" width="232" height="174" fill="#fdfcf9"/>
+<text x="710" y="2281" text-anchor="end" font-size="28" fill="#303634">24</text>
+<rect x="724" y="2242" width="232" height="174" fill="#fdfcf9"/>
+<text x="942" y="2281" text-anchor="end" font-size="28" fill="#303634">25</text>
+<rect x="956" y="2242" width="232" height="174" fill="#fdfcf9"/>
+<text x="1174" y="2281" text-anchor="end" font-size="28" fill="#303634">26</text>
+<rect x="1188" y="2242" width="232" height="174" fill="#fdfcf9"/>
+<text x="1406" y="2281" text-anchor="end" font-size="28" fill="#303634">27</text>
+<rect x="1420" y="2242" width="232" height="174" fill="#f2f1ec"/>
+<text x="1638" y="2281" text-anchor="end" font-size="28" fill="#89897e">28</text>
+<rect x="28" y="2416" width="232" height="174" fill="#f2f1ec"/>
+<text x="246" y="2455" text-anchor="end" font-size="28" fill="#89897e">29</text>
+<rect x="260" y="2416" width="232" height="174" fill="#fdfcf9"/>
+<text x="478" y="2455" text-anchor="end" font-size="28" fill="#303634">30</text>
+<rect x="492" y="2416" width="232" height="174" fill="#fdfcf9"/>
+<text x="710" y="2455" text-anchor="end" font-size="28" fill="#b9b8af">12月1日</text>
+<rect x="724" y="2416" width="232" height="174" fill="#fdfcf9"/>
+<text x="942" y="2455" text-anchor="end" font-size="28" fill="#b9b8af">12月2日</text>
+<rect x="956" y="2416" width="232" height="174" fill="#fdfcf9"/>
+<text x="1174" y="2455" text-anchor="end" font-size="28" fill="#b9b8af">12月3日</text>
+<rect x="1188" y="2416" width="232" height="174" fill="#fdfcf9"/>
+<text x="1406" y="2455" text-anchor="end" font-size="28" fill="#b9b8af">12月4日</text>
+<rect x="1420" y="2416" width="232" height="174" fill="#f2f1ec"/>
+<text x="1638" y="2455" text-anchor="end" font-size="28" fill="#b9b8af">12月5日</text>
+<path d="M28,154 V2590" stroke="#deded7" stroke-width="1"/>
+<path d="M260,154 V2590" stroke="#deded7" stroke-width="1"/>
+<path d="M492,154 V2590" stroke="#deded7" stroke-width="1"/>
+<path d="M724,154 V2590" stroke="#deded7" stroke-width="1"/>
+<path d="M956,154 V2590" stroke="#deded7" stroke-width="1"/>
+<path d="M1188,154 V2590" stroke="#deded7" stroke-width="1"/>
+<path d="M1420,154 V2590" stroke="#deded7" stroke-width="1"/>
+<path d="M1652,154 V2590" stroke="#deded7" stroke-width="1"/>
 <path d="M28,154 H1652" stroke="#deded7" stroke-width="1"/>
 <path d="M28,328 H1652" stroke="#deded7" stroke-width="1"/>
 <path d="M28,502 H1652" stroke="#deded7" stroke-width="1"/>
@@ -252,4 +326,9 @@
 <path d="M28,1372 H1652" stroke="#deded7" stroke-width="1"/>
 <path d="M28,1546 H1652" stroke="#deded7" stroke-width="1"/>
 <path d="M28,1720 H1652" stroke="#deded7" stroke-width="1"/>
+<path d="M28,1894 H1652" stroke="#deded7" stroke-width="1"/>
+<path d="M28,2068 H1652" stroke="#deded7" stroke-width="1"/>
+<path d="M28,2242 H1652" stroke="#deded7" stroke-width="1"/>
+<path d="M28,2416 H1652" stroke="#deded7" stroke-width="1"/>
+<path d="M28,2590 H1652" stroke="#deded7" stroke-width="1"/>
 </g></svg>
