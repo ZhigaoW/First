@@ -252,8 +252,7 @@
 <rect x="1420" y="1720" width="232" height="174" fill="#f2f1ec"/>
 <text x="1638" y="1759" text-anchor="end" font-size="28" fill="#89897e">7</text>
 <rect x="28" y="1894" width="232" height="174" fill="#f2f1ec"/>
-<circle cx="231" cy="1923" r="22" fill="#b85c47"/>
-<text x="231" y="1933" text-anchor="middle" font-size="28" fill="#ffffff">8</text>
+<text x="246" y="1933" text-anchor="end" font-size="28" fill="#89897e">8</text>
 <g><title>2026-11-08 卧推：40×10；50×10×2；50×6
 引体：8、5、2</title>
 <rect x="33" y="1948" width="222" height="24" rx="8" fill="#dce7f2"/>
@@ -264,7 +263,11 @@
 <rect x="260" y="1894" width="232" height="174" fill="#fdfcf9"/>
 <text x="478" y="1933" text-anchor="end" font-size="28" fill="#303634">9</text>
 <rect x="492" y="1894" width="232" height="174" fill="#fdfcf9"/>
-<text x="710" y="1933" text-anchor="end" font-size="28" fill="#303634">10</text>
+<circle cx="695" cy="1923" r="22" fill="#b85c47"/>
+<text x="695" y="1933" text-anchor="middle" font-size="28" fill="#ffffff">10</text>
+<g><title>2026-11-10 跑步：1 km</title>
+<rect x="497" y="1948" width="222" height="24" rx="8" fill="#deebe3"/>
+<text x="506" y="1966" font-size="20.00" fill="#3d6555">跑步 1 km</text></g>
 <rect x="724" y="1894" width="232" height="174" fill="#fdfcf9"/>
 <text x="942" y="1933" text-anchor="end" font-size="28" fill="#303634">11</text>
 <rect x="956" y="1894" width="232" height="174" fill="#fdfcf9"/>
