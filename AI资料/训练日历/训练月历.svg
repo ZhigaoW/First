@@ -263,8 +263,7 @@
 <rect x="260" y="1894" width="232" height="174" fill="#fdfcf9"/>
 <text x="478" y="1933" text-anchor="end" font-size="28" fill="#303634">9</text>
 <rect x="492" y="1894" width="232" height="174" fill="#fdfcf9"/>
-<circle cx="695" cy="1923" r="22" fill="#b85c47"/>
-<text x="695" y="1933" text-anchor="middle" font-size="28" fill="#ffffff">10</text>
+<text x="710" y="1933" text-anchor="end" font-size="28" fill="#303634">10</text>
 <g><title>2026-11-10 跑步：1 km；5分35秒</title>
 <rect x="497" y="1948" width="222" height="24" rx="8" fill="#deebe3"/>
 <text x="506" y="1966" font-size="20.00" fill="#3d6555">跑步 1 km</text></g>
@@ -273,7 +272,11 @@
 <rect x="956" y="1894" width="232" height="174" fill="#fdfcf9"/>
 <text x="1174" y="1933" text-anchor="end" font-size="28" fill="#303634">12</text>
 <rect x="1188" y="1894" width="232" height="174" fill="#fdfcf9"/>
-<text x="1406" y="1933" text-anchor="end" font-size="28" fill="#303634">13</text>
+<circle cx="1391" cy="1923" r="22" fill="#b85c47"/>
+<text x="1391" y="1933" text-anchor="middle" font-size="28" fill="#ffffff">13</text>
+<g><title>2026-11-13 硬拉：60×10；90×7、8、5</title>
+<rect x="1193" y="1948" width="222" height="24" rx="8" fill="#dce7f2"/>
+<text x="1202" y="1966" font-size="20.00" fill="#345775">硬拉</text></g>
 <rect x="1420" y="1894" width="232" height="174" fill="#f2f1ec"/>
 <text x="1638" y="1933" text-anchor="end" font-size="28" fill="#89897e">14</text>
 <rect x="28" y="2068" width="232" height="174" fill="#f2f1ec"/>
