@@ -10,7 +10,13 @@
 ## 体重
 
 ```mermaid
-%%{init: {"theme": "base", "themeVariables": {"primaryColor": "#16a34a", "xyChart": {"plotColorPalette": "#16a34a"}}}}%%
+---
+config:
+  theme: base
+  themeVariables:
+    xyChart:
+      plotColorPalette: "#16a34a"
+---
 xychart-beta
     title "体重（斤；最高150，最低146.2）"
     x-axis ["10-10","10-11","10-12","10-13","10-14","10-15","10-17","10-18","10-22","10-25","10-26","10-28","10-29","11-08","11-16"]
