@@ -281,8 +281,7 @@
 <rect x="28" y="2068" width="232" height="174" fill="#f2f1ec"/>
 <text x="246" y="2107" text-anchor="end" font-size="28" fill="#89897e">15</text>
 <rect x="260" y="2068" width="232" height="174" fill="#fdfcf9"/>
-<circle cx="463" cy="2097" r="22" fill="#b85c47"/>
-<text x="463" y="2107" text-anchor="middle" font-size="28" fill="#ffffff">16</text>
+<text x="478" y="2107" text-anchor="end" font-size="28" fill="#303634">16</text>
 <g><title>2026-11-16 面拉：9×10×2；11×10×2
 引体向上：6、7、7、7</title>
 <rect x="265" y="2122" width="222" height="24" rx="8" fill="#dce7f2"/>
@@ -300,7 +299,11 @@
 <rect x="492" y="2068" width="232" height="174" fill="#fdfcf9"/>
 <text x="710" y="2107" text-anchor="end" font-size="28" fill="#303634">17</text>
 <rect x="724" y="2068" width="232" height="174" fill="#fdfcf9"/>
-<text x="942" y="2107" text-anchor="end" font-size="28" fill="#303634">18</text>
+<circle cx="927" cy="2097" r="22" fill="#b85c47"/>
+<text x="927" y="2107" text-anchor="middle" font-size="28" fill="#ffffff">18</text>
+<g><title>2026-11-18 深蹲：热身70×10；正式90×8×3</title>
+<rect x="729" y="2122" width="222" height="24" rx="8" fill="#dce7f2"/>
+<text x="738" y="2140" font-size="20.00" fill="#345775">深蹲</text></g>
 <rect x="956" y="2068" width="232" height="174" fill="#fdfcf9"/>
 <text x="1174" y="2107" text-anchor="end" font-size="28" fill="#303634">19</text>
 <rect x="1188" y="2068" width="232" height="174" fill="#fdfcf9"/>
