@@ -321,6 +321,12 @@
 <rect x="260" y="2242" width="232" height="174" fill="#fdfcf9"/>
 <circle cx="463" cy="2271" r="22" fill="#b85c47"/>
 <text x="463" y="2281" text-anchor="middle" font-size="28" fill="#ffffff">23</text>
+<g><title>2026-11-23 硬拉：60×10；100×3、6、1</title>
+<rect x="265" y="2296" width="222" height="24" rx="8" fill="#dce7f2"/>
+<text x="274" y="2314" font-size="20.00" fill="#345775">硬拉</text></g>
+<g><title>2026-11-23 户外跑步：3.02 km；18分29秒</title>
+<rect x="265" y="2323" width="222" height="24" rx="8" fill="#deebe3"/>
+<text x="274" y="2341" font-size="20.00" fill="#3d6555">户外跑步 3.02 km</text></g>
 <rect x="492" y="2242" width="232" height="174" fill="#fdfcf9"/>
 <text x="710" y="2281" text-anchor="end" font-size="28" fill="#303634">24</text>
 <rect x="724" y="2242" width="232" height="174" fill="#fdfcf9"/>
