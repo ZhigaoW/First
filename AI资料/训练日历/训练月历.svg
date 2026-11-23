@@ -299,8 +299,7 @@
 <rect x="492" y="2068" width="232" height="174" fill="#fdfcf9"/>
 <text x="710" y="2107" text-anchor="end" font-size="28" fill="#303634">17</text>
 <rect x="724" y="2068" width="232" height="174" fill="#fdfcf9"/>
-<circle cx="927" cy="2097" r="22" fill="#b85c47"/>
-<text x="927" y="2107" text-anchor="middle" font-size="28" fill="#ffffff">18</text>
+<text x="942" y="2107" text-anchor="end" font-size="28" fill="#303634">18</text>
 <g><title>2026-11-18 深蹲：热身70×10；正式90×8×3</title>
 <rect x="729" y="2122" width="222" height="24" rx="8" fill="#dce7f2"/>
 <text x="738" y="2140" font-size="20.00" fill="#345775">深蹲</text></g>
@@ -310,10 +309,15 @@
 <text x="1406" y="2107" text-anchor="end" font-size="28" fill="#303634">20</text>
 <rect x="1420" y="2068" width="232" height="174" fill="#f2f1ec"/>
 <text x="1638" y="2107" text-anchor="end" font-size="28" fill="#89897e">21</text>
+<g><title>2026-11-21 卧推：40 kg×10；60 kg×6×3
+引体向上：6 7 6组（原话）</title>
+<rect x="1425" y="2122" width="222" height="24" rx="8" fill="#dce7f2"/>
+<text x="1434" y="2140" font-size="20.00" fill="#345775">卧推 · 引体向上</text></g>
 <rect x="28" y="2242" width="232" height="174" fill="#f2f1ec"/>
 <text x="246" y="2281" text-anchor="end" font-size="28" fill="#89897e">22</text>
 <rect x="260" y="2242" width="232" height="174" fill="#fdfcf9"/>
-<text x="478" y="2281" text-anchor="end" font-size="28" fill="#303634">23</text>
+<circle cx="463" cy="2271" r="22" fill="#b85c47"/>
+<text x="463" y="2281" text-anchor="middle" font-size="28" fill="#ffffff">23</text>
 <rect x="492" y="2242" width="232" height="174" fill="#fdfcf9"/>
 <text x="710" y="2281" text-anchor="end" font-size="28" fill="#303634">24</text>
 <rect x="724" y="2242" width="232" height="174" fill="#fdfcf9"/>
