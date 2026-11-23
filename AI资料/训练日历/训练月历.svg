@@ -315,6 +315,9 @@
 <text x="1434" y="2140" font-size="20.00" fill="#345775">卧推 · 引体向上</text></g>
 <rect x="28" y="2242" width="232" height="174" fill="#f2f1ec"/>
 <text x="246" y="2281" text-anchor="end" font-size="28" fill="#89897e">22</text>
+<g><title>2026-11-22 西湖步行：比较长时间</title>
+<rect x="33" y="2296" width="222" height="24" rx="8" fill="#deebe3"/>
+<text x="42" y="2314" font-size="20.00" fill="#3d6555">西湖步行 比较长时间</text></g>
 <rect x="260" y="2242" width="232" height="174" fill="#fdfcf9"/>
 <circle cx="463" cy="2271" r="22" fill="#b85c47"/>
 <text x="463" y="2281" text-anchor="middle" font-size="28" fill="#ffffff">23</text>
